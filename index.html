@@ -1,0 +1,393 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Rover</title>
+</head>
+
+<body>
+    <main>
+        <!-- nav bar start  -->
+        <nav class="mainnav navbar  navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="bi bi-hurricane"></i> Rover</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">New Releases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#artist-section">Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#playlist-section">Playlists</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img class='rounded-circle' src="images/kai_square_800.jpg" style="width:35px" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of Navigation bar -->
+
+        <!-- start hero area -->
+        <div class="hero-area p-2">
+            <ul class="nav m-2 nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Pop</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Rock</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Dance</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Rap</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Hip-Hop</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Country</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">EDM</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+
+                    <!-- start song item  -->
+                    <div class="small-song m-2 ms-4  col-md-6 row align-items-center">
+                        <div class="col-1 col h3">01</div>
+                        <div class="col align-items-center d-flex"><img class='rounded m-1'
+                                src="images/kai_square_800.jpg" style="width: 50px;height:50px;object-fit:cover"
+                                alt="album art">
+                            <div class="m-2 ">Rover
+                                <div class="text-muted">Kai</div>
+                            </div>
+                        </div>
+                        <div class="col-2">3:30 <i class="bi bi-play-circle-fill"></i></div>
+                    </div>
+                    <!-- end song item -->
+                    <!-- start song item  -->
+                    <div class="small-song m-2 ms-4  col-md-6 row align-items-center">
+                        <div class="col-1 col h3">02</div>
+                        <div class="col align-items-center d-flex"><img class='rounded m-1'
+                                src="images/kai_square_800.jpg" style="width: 50px;height:50px;object-fit:cover"
+                                alt="album art">
+                            <div class="m-2 ">Don't Fight the Feeling
+                                <div class="text-muted">EXO</div>
+                            </div>
+                        </div>
+                        <div class="col-2">3:27 <i class="bi bi-play-circle-fill"></i></div>
+                    </div>
+                    <!-- end song item -->
+                    <!-- start song item  -->
+                    <div class="small-song m-2 ms-4  col-md-6 row align-items-center">
+                        <div class="col-1 col h3">03</div>
+                        <div class="col align-items-center d-flex"><img class='rounded m-1'
+                                src="images/kai_square_800.jpg" style="width: 50px;height:50px;object-fit:cover"
+                                alt="album art">
+                            <div class="m-2 ">Bring the Noize
+                                <div class="text-muted">NCT 127</div>
+                            </div>
+                        </div>
+                        <div class="col-2">3:30 <i class="bi bi-play-circle-fill"></i></div>
+                    </div>
+                    <!-- end song item -->
+                    <!-- start song item  -->
+                    <div class="small-song m-2 ms-4  col-md-6 row align-items-center">
+                        <div class="col-1 col h3">04</div>
+                        <div class="col align-items-center d-flex"><img class='rounded m-1'
+                                src="images/kai_square_800.jpg" style="width: 50px;height:50px;object-fit:cover"
+                                alt="album art">
+                            <div class="m-2 ">No Beanie
+                                <div class="text-muted">Conner Price</div>
+                            </div>
+                        </div>
+                        <div class="col-2">3:20 <i class="bi bi-play-circle-fill"></i></div>
+                    </div>
+                    <!-- end song item -->
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">Lorem, ipsum.</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">Lorem, ipsum.</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">Lorem, ipsum.</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">Lorem, ipsum.</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">Lorem, ipsum.</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">Lorem, ipsum.</div>
+            </div>
+        </div>
+        <!-- end hero area  -->
+
+        <!-- genre category start-->
+        <div class="container-fluid overflow:hidden">
+            <h3 class="mb-1">Genre <i class="bi bi-play-circle-fill"></i></h3>
+            <div class="m-2 row row-cols-2 row-cols-md-5 flex-nowrap overflow-auto rounded">
+                <div class="col mb-4">
+                    <div class="card h-100" style="height: 200px; overflow: hidden;">
+                        <img src="images/jazz.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body" ">
+                            <h5 class=" card-title">jazz</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="height: 200px; overflow: hidden;">
+                        <img src="images/jazz.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body" ">
+                            <h5 class=" card-title">Rock</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="height: 200px; overflow: hidden;">
+                        <img src="images/jazz.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body" ">
+                            <h5 class=" card-title">Rock</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+
+        <!-- genre category end -->
+
+
+        <!-- start Artist area -->
+
+
+        <div id="artist-section" class="container-fluid overflow:hidden">
+            <h3 class="mb-1">Artists <i class="bi bi-play-circle-fill"></i></h3>
+            <div class="m-2 row row-cols-2 row-cols-md-5 flex-nowrap overflow-auto rounded">
+                <div class="col mb-4">
+                    <div class="card h-100" style="height: 200px; overflow: hidden;">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" ">
+                            <h5 class=" card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+
+        <!-- end Artist area -->
+
+        <!-- playlists category start -->
+
+        <div id="playlist-section" class="container-fluid overflow:hidden">
+            <h3 class="mb-1">Playlists <i class="bi bi-play-circle-fill"></i></h3>
+            <div class="m-2 row row-cols-2 row-cols-md-5 flex-nowrap overflow-auto rounded">
+                <div class="col mb-4">
+                    <div class="card h-100" style="height: 200px; overflow: hidden;">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" ">
+                            <h5 class=" card-title">User playlist 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="images/kai_square_800.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+        <!-- playlists category end -->
+
+
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</html>
