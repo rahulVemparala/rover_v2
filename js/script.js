@@ -1,5 +1,3 @@
-
-
 function filterObjects(c) {
     var x, i;
     x = document.getElementsByClassName("song");
@@ -11,28 +9,26 @@ function filterObjects(c) {
             x[i].style.display = "none";
         }
     }
-}
 
-document.addEventListener("DOMContentLoaded", function () {
-    var btns = document.querySelectorAll(".btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-            var current = document.querySelector(".active");
-            if (current) {
-                current.classList.remove("active");
-            }
-            this.classList.add("active");
-        });
+    // Smoothly scroll to the song-section element
+    var songSection = document.getElementById("song-section");
+    if (songSection) {
+        songSection.scrollIntoView({ behavior: "smooth" });
     }
-});
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
+    var instances = M.Sidenav.init(elems);
 });
+
 
 // Or with jQuery
 
 $(document).ready(function () {
-    $('.sidenav').sidenav();
+    $('.fixed-action-btn').floatingActionButton();
 });
+
+
+
+var instance = M.FloatingActionButton.getInstance(elem);
