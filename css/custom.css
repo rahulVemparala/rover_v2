@@ -1,6 +1,6 @@
 body {
     min-width: 350px;
-    background-image: url(../images/wal.jpg);
+    background-image: url(../images/wal1.jpeg);
     min-height: 1000px;
     background-size: 100%;
 }
@@ -52,4 +52,15 @@ body {
     /* Hide the scrollbar for other browsers */
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+
+.collection-item.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play_circle_filled {
+    margin-left: auto;
 }
