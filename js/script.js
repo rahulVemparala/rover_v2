@@ -32,3 +32,12 @@ $(document).ready(function () {
 
 
 var instance = M.FloatingActionButton.getInstance(elem);
+
+
+$(document).ready(function () {
+    $('.tabs').tabs();
+});
+
+$(document).ready(function () {
+    $('.tooltip').tooltip();
+});

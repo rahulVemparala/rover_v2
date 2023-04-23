@@ -55,7 +55,10 @@
         .page-footer p,
         .page-footer a {
             color: black !important;
-            /* Set the color of the text to black */
+        }
+
+        .playlist-category {
+            margin-bottom: 20px;
         }
 
 
@@ -80,16 +83,25 @@
         .nav-wrapper a {
             color: black !important;
         }
+
+        .card:hover .card-content {
+            opacity: 1;
+        }
+
+        .card-content {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
     </style>
 
 
     <title>Artists</title>
 </head>
 
-<body style="background-image: url(images/wal3.jpg);">
+<body style="background-image: url(images/wal7.jpg);">
 
 
-    <nav>
+    <nav id="nav-bar">
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">Rover</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -108,35 +120,8 @@
     </ul>
 
 
-
-
     <!-- navbar end -->
 
-    <!-- wall cover start -->
-    <div class="about-card col s12 m8 offset-m2 l6 offset-l3">
-
-        <div class="card-panel grey lighten-5 z-depth-1">
-            <div class="about-heading">
-                <h3></h3>
-            </div>
-            <div class="row valign-wrapper justify-content">
-
-                <div class="col s2">
-                    <img src="images/kai_square_800.jpg" alt="" class="circle responsive-img">
-                    <!-- notice the "circle" class -->
-                </div>
-
-                <div class="col s10 text-right flow-text">
-                    <span class="black-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis at facilis itaque
-                        sint totam officiis molestias vel dolorem nam?
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- wall cover end  -->
 
 
     <!-- Page Layout here -->
@@ -149,63 +134,107 @@
             3-columns-wide on large screens,
             4-columns-wide on medium screens,
             12-columns-wide on small screens  -->
-            <div class="album-list">
-                <div class="heading">
-                    <a href="">
-                        <h4>Albums<i class="material-icons" id="album-section"
-                                style="vertical-align: middle;">chevron_right</i></h4>
+            <div class="row">
+                <div>
+                    <h4 class="center-align">Playlists</h5>
+                </div>
+                <div class="playlist-category" style="margin-bottom: 20px;">
+                    <div class="heading center">
+                        <a href="">
+                            <h6>Recents<i class="material-icons" id="album-section"
+                                    style="vertical-align: middle;">chevron_right</i></h6>
+                        </a>
+                    </div>
+                    <a href='#' onclick="filterObjects('album1')">
+                        <div class="col s12 m8 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
+                        </div>
                     </a>
+                    <a href='#' onclick="filterObjects('album2')">
+                        <div class="col s12 m4 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='#' onclick="filterObjects('album3')">
+                        <div class="col s12 m3 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href='#' onclick="filterObjects('album4')">
+                        <div class="col s12 m4 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
 
-                <div class="col m12 m6">
-                    <div class="card" onclick="filterObjects('album1')">
-                        <div class="card-image">
-                            <img src="images/kai_square_800.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">play_arrow</i></a>
-                        </div>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
+
+                <div class="playlist-category" style="margin-bottom: 20px;">
+                    <div class="heading center">
+                        <a href="">
+                            <h6>Genre-playlists<i class="material-icons" id="album-section"
+                                    style="vertical-align: middle;">chevron_right</i></h6>
+                        </a>
                     </div>
-                    <div class="card" onclick="filterObjects('album2')">
-                        <div class="card-image">
-                            <img src="images/kai_square_800.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a href="#albums" class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">play_arrow</i></a>
+                    <a href='#' onclick="filterObjects('album1')">
+                        <div class="col s12 m4 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+                    <a href='#' onclick="filterObjects('album2')">
+                        <div class="col s12 m5 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card" onclick="filterObjects('album3')">
-                        <div class="card-image">
-                            <img src="images/kai_square_800.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i class="material-icons">play_arrow</i></a>
+                    </a>
+                    <a href='#' onclick="filterObjects('album3')">
+                        <div class="col s12 m8 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+                    <a href='#' onclick="filterObjects('album4')">
+                        <div class="col s12 m4 ">
+                            <div class="card" style="border-radius: 50%;">
+                                <div class="card-image">
+                                    <img style='border-radius: 50%;' src="images/kai_square_800.jpg" alt="Placeholder">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card" onclick="filterObjects('album4')">
-                        <div class="card-image">
-                            <img src="images/kai_square_800.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                <i href="#album-section" class="material-icons">play_arrow</i></a>
-                        </div>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
+                    </a>
+
                 </div>
+
+
+
+
             </div>
-
-
 
         </div>
 
@@ -221,7 +250,7 @@
 
             <div class="song-list">
                 <div onclick="filterObjects('all')">
-                    <a href="">
+                    <a>
                         <h4>Songs <i class="material-icons" id="song-section" style="vertical-align: middle;">list</i>
                         </h4>
 
@@ -344,6 +373,22 @@
         </div>
 
     </div>
+
+    <!-- floating button to top :  -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a href='index.html' class="btn-floating yellow darken-1"><i class="material-icons">home</i></a>
+            </li>
+            <li><a href="about.html" class="btn-floating green"><i class="material-icons">group
+                    </i></a></li>
+            <li><a href="#nav-bar" class="btn-floating blue"><i class="material-icons">arrow_upward</i></a></li>
+        </ul>
+    </div>
+
+    <!-- floating button to top : end -->
 
     <!-- footer start -->
     <footer class="page-footer">
